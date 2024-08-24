@@ -1,4 +1,3 @@
-import webbrowser
 import streamlit  as st
 import pandas     as pd
 from datetime import datetime
@@ -45,11 +44,10 @@ st.sidebar.markdown(
 )
 
 # Create button and logic for accessing Kaggle dataset page:
-button = st.button("Acess official dataset in Kaggle")
-if button:
-    webbrowser.open_new_tab(
-        "https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data"
-    )
+button = st.link_button(
+    "Acess official dataset in Kaggle",
+    "https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data"
+)
 
 # Create markdown text to be printed on the main screen:
 st.markdown(

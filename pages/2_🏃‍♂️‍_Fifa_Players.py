@@ -3,9 +3,9 @@ import numpy     as np
 
 # Configure the page layout parameters:
 st.set_page_config(
-    page_title = "Players Statistics",
+    layout = "wide",
     page_icon = "🏃‍",
-    layout = "wide"
+    page_title = "Players Statistics"
 )
 
 # Import the dataframe from the session state cache:
